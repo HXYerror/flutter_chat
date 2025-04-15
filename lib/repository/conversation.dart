@@ -1,7 +1,6 @@
 import 'package:dart_openai/dart_openai.dart';
 import 'package:path/path.dart';
-import 'package:sqflite/sqflite.dart';
-
+import 'package:sqflite_common/sqflite.dart';
 class Conversation {
   String name;
   String description;

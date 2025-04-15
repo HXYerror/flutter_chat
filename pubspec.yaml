@@ -40,7 +40,6 @@ dependencies:
   flutter_easyloading: ^3.0.5
   freezed: ^2.3.2
   font_awesome_flutter: ^10.4.0
-  sqflite: ^2.2.6
   uuid: ^3.0.7
   markdown_widget: 2.2.0
   flutter_math_fork: ^0.7.1
@@ -55,6 +54,9 @@ dependencies:
   html: ^0.15.4
   shared_preferences: 2.1.2
   fluttertoast: ^8.2.4
+  sqflite_common: ^2.5.0+2
+  sqflite_common_ffi: ^2.3.1
+  sqflite: ^2.3.0
 
 dev_dependencies:
   flutter_test:

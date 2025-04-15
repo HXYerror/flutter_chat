@@ -11,8 +11,14 @@ import 'package:awesome_help/route.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 void main() async {
+  if (GetPlatform.isWindows) {
+    // Initialize FFI
+    sqfliteFfiInit();
+    databaseFactory = databaseFactoryFfi;
+  }
   await GetStorage.init();
   FToastBuilder();
   WidgetsFlutterBinding.ensureInitialized();
